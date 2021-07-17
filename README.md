@@ -1,8 +1,12 @@
-# CRA - Redux - MUI
+# CRA - Redux - MUI Template
 
-Template Repository for Create React App - Redux and Material Ui. May Add more useful dependency later.
+Template Repository for Create React App - Redux and Material Ui and More
 
 Also Contains a functional Reducer which Updates the Page Title and Meta Description.
+
+# Routing - React Router
+
+Page Routing is done in App.js controlled throught routes.js
 
 # Testing 
 
