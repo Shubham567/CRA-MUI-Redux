@@ -6,6 +6,8 @@ Also Contains a functional Reducer which Updates the Page Title and Meta Descrip
 
 # Testing 
 
+Contains a functional test
+
 Take a look at Home.test.js
 
 
