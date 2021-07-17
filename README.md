@@ -1,3 +1,8 @@
+# CRA - Redux - MUI
+
+Template Repository for Create React App - Redux and Material Ui. May Add more useful dependency later
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

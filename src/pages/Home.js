@@ -11,7 +11,7 @@ export default function Home() {
     return (
         <React.Fragment>
             <Page>
-                <Grid container justify="center" alignItems="center">
+                <Grid container justifyContent="center" alignItems="center">
                     <Grid item>
                         <Typography variant="h1" align="center">
                             Welcome to {appDetails?.pageTitle}
