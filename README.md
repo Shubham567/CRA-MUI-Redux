@@ -1,6 +1,12 @@
 # CRA - Redux - MUI
 
-Template Repository for Create React App - Redux and Material Ui. May Add more useful dependency later
+Template Repository for Create React App - Redux and Material Ui. May Add more useful dependency later.
+
+Also Contains a functional Reducer which Updates the Page Title and Meta Description.
+
+# Testing 
+
+Take a look at Home.test.js
 
 
 # Getting Started with Create React App
