@@ -10,10 +10,7 @@ function App() {
 
   useEffect(() => {
     document.title = appDetails.pageTitle;
-    const metaDesc = document.querySelector('meta[name="description"]');
-    if(metaDesc) {
-      metaDesc.content = appDetails.description;
-    }
+    document.querySelector('meta[name="description"]')?.setAttribute("content",appDetails.description);
   }, [appDetails])
 
   return (
