@@ -8,6 +8,7 @@ import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 import {APP_DETAILS} from "./defs/appDetails";
 import clsx from "clsx";
+import { Menu } from "@material-ui/icons";
 
 const drawerWidth = 240;
 const useStyles = makeStyles((theme) => ({
@@ -126,20 +127,22 @@ function App() {
                   </MUILink>
               ))}
             </List>
-
           </Drawer>
+              
 
-        <main
-        className={clsx(classes.content, {
-          [classes.contentShift]: openMenu,
-        })}
-      >
+        <main    className={clsx(classes.content, {[classes.contentShift]: openMenu,})}>
             <Switch>
               {
                 routes.map(route => <Route path={route.pathname} {...route.props} key={route.pathname}>{route.component}</Route>)
               }
             </Switch>
       </main>
+      {
+        !openMenu &&
+        <div style={{position: "fixed", zIndex: 5000, right: 30, bottom:  20}}>
+          <IconButton onClick={handleDrawerOpen}><Menu/></IconButton>
+        </div>
+        }
     </BrowserRouter>
   );
 }
