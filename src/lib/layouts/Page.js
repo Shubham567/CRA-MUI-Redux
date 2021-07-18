@@ -5,6 +5,7 @@ import React from 'react'
 const useStyles = makeStyles(() => ({
     root: {
         minHeight: "100vh",
+        borderRadius: 0
     }
 }))
 
