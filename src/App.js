@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import {BrowserRouter, Switch, Route, Link} from "react-router-dom";
 import routes from './routes';
 import {useSelector} from 'react-redux';
-import { Grid, Drawer, IconButton, Divider, List, ListItem, ListItemText, ListItemIcon, makeStyles, useTheme, Link as MUILink, Typography } from "@material-ui/core";
+import { Drawer, IconButton, Divider, List, ListItem, ListItemText, ListItemIcon, makeStyles, useTheme, Link as MUILink, Typography } from "@material-ui/core";
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 import {APP_DETAILS} from "./defs/appDetails";
@@ -119,7 +119,7 @@ function App() {
             <Divider />
             <List>
               {routes.map((route) => (
-                  <MUILink to={route.href} key={route.href}>
+                  <MUILink href={route.href} key={route.href}>
                     <ListItem button>
                       <ListItemIcon>{route.icon}</ListItemIcon>
                       <ListItemText primary={route.name} />
